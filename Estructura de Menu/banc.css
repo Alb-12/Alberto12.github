@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #0033a0;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.soluciones {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url("principal.jpg");
+}
+
+.soluciones h1 {
+    color: #0c0200;
+}
+.soluciones p {
+    color: rgb(250, 250, 253);
+    
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0033a0;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #0033a0;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
