@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de XML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Administrar Jugadore del Roster</h2>
+
+        
+        <h3>Modificar Nombre del jugador </h3>
+        <input type="text" id="nombre" placeholder="Nuevo Nombre">
+        <button onclick="modificarXML()">Modificar</button>
+        <h3>Eliminar Jugador</h3>
+        <button onclick="eliminarXML()">Eliminar</button>
+    </div>
+  
+    <script>
+        function modificarXML() {
+            let nuevoNombre = document.getElementById("nombre").value;
+            fetch("http://localhost:3000/modificar", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nombre: nuevoNombre })
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error("Error:", error));
+        }
+
+        function eliminarXML() {
+            fetch("http://localhost:3000/eliminar", {
+                method: "POST"
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+</html>
+

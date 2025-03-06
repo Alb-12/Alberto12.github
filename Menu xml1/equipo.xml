@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo cod="lci">
+        <nombre>Licey</nombre>
+        <ciudad>Santo domingo</ciudad>
+        <entrenador>Albert Pujol</entrenador>
+    
+    <jugadores>
+        <jugador posicion="Jardinero central" dorsal="1">
+            <nombre>Emilio Bonifacio </nombre>
+            <nacionalidad>Dominicano </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="segunda base" dorsal="2">
+            <nombre>Gustavo Nunez </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Bateador designado" dorsal="3">
+            <nombre>Harold Ramirez </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Campocorto" dorsal="4">
+            <nombre>Sergio Alcantara </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Primera base" dorsal="5">
+            <nombre>Victor Mendoza </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Catcher" dorsal="6">
+            <nombre>Francisco Mejia </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Centro campo" dorsal="7">
+            <nombre>Johan Rojas </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Campo izquierdo" dorsal="8">
+            <nombre>Troy johnston </nombre>
+            <nacionalidad>Norteamericano </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="Jugador de posicion" dorsal="8">
+            <nombre>Yonathan Daza </nombre>
+            <nacionalidad>Norteamericano </nacionalidad>
+            
+        <jugador>
+         <jugador posicion="Jugador de posicion" dorsal="8">
+            <nombre>FranciscomArcia </nombre>
+            <nacionalidad>Norteamericano </nacionalidad>
+            
+        <jugador>
+
+    
+
+    </jugadores>
+    </equipo>
+     <equipo cod="agl">
+        <nombre>Aguilas cibaenas</nombre>
+        <ciudad>Cibao</ciudad>
+        <entrenador>Fernando tatis</entrenador>
+    
+    <jugadores>
+        <jugador posicion="Pitchers" dorsal="2">
+            <nombre>Jhonny cueto </nombre>
+            <nacionalidad>Dominicano </nacionalidad>
+            
+        <jugador>
+        <jugador posicion="infielders" dorsal="5">
+            <nombre>Cesar prieto </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+         <jugador>
+        <jugador posicion="Catchers" dorsal="5">
+            <nombre>Carlos paulino </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+         <jugador>
+        <jugador posicion="outfielders" dorsal="5">
+            <nombre>Juan Lagares </nombre>
+            <nacionalidad>Dominicana </nacionalidad>
+            
+        <jugador>
+
+    </jugadores>
+    </equipo>
+</equipos>
+    
