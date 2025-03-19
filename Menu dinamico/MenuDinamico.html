@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dinamico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="menu"><ul>
+        <li>Inicio</li></ul>
+        <ul id="menu"></ul>
+    </nav>
+    <form action="#" class="formulario" id="form">
+    <h2>Agregar Elemento al Menú</h2>
+    <input type="text" id="input" placeholder="Ingrese elemento">
+    <button id="addMenuItem" class="btn_Agregar">Agregar al Menú</button>
+
+    <h2>Agregar Submenú con Enlace</h2>
+    <select id="menuSelect">
+        <option value="">Seleccione un elemento</option>
+    </select>
+    <input type="text" id="subInput" placeholder="Ingrese submenú">
+    <input type="text" id="subLinkInput" placeholder="Ingrese URL">
+    <button id="addSubMenuItem" class="btn_AgregarSub">Agregar Submenú</button>
+
+    <h2>Eliminar Submenú</h2>
+    <select id="subMenuSelect">
+        <option value="">Seleccione un submenú</option>
+    </select>
+    <button id="deleteSubMenu" class="btn_Eliminar">Eliminar Submenú</button>
+
+    </form>
+
+    <script src="menu.js">
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+#form{
+    max-width: 600px;
+    background: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: auto;
+}
+#form h2{
+    text-align: center;
+    color:#333
+}
+input,select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+button{
+    text-align: center;
+    margin-top: 15px;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+   background: #007BFF;
+}
+#menu{
+    color: white;
+    background-color: #71ecfa;
+    display: flex;
+    margin: 10px;
+    list-style: none;
+   
+}
