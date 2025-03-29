@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body { 
+    font-family: Arial, sans-serif;
+     margin: 20px;
+    background-color: #ece7e7;
+ 
+}
+body h1{
+    margin-left: 35%;
+
+}
+.pagina { 
+    display: none;
+}
+.activa { 
+    width: 500px;
+    padding: 20px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+
+input {
+     width: 100%;
+     display: block; 
+     margin: 15px 0;
+     padding: 10px;
+     }
+ button {
+        color: white;
+        background: rgb(38, 114, 246);
+        display: block; 
+        margin: 10px 0;
+        align-items: center;
+        margin-left: 100px;
+        padding: 10px;
+        width: 50%;
+        
+        }
+table, th, td { 
+    border: 1px solid black; 
+    border-collapse: collapse;
+    padding: 5px;
+ }

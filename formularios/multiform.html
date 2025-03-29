@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Persona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Formulario de Registro</h1>
+
+  <div id="pagina1" class="pagina activa">
+    <h2>Datos Personales</h2>
+    <input id="nombre" placeholder="Nombre">
+    <input id="apellido" placeholder="Apellido">
+    <input id="edad" placeholder="Edad" type="number">
+    <button onclick="nextPage(2)">Siguiente</button>
+  </div>
+
+  <div id="pagina2" class="pagina">
+    <h2>Datos de Familiares</h2>
+    <input id="fNombre" placeholder="Nombre">
+    <input id="fParentesco" placeholder="Parentesco">
+    <input id="fEdad" placeholder="Edad" type="number">
+    <button onclick="addFamiliar()">Agregar Familiar</button>
+    <ul id="familiaresList"></ul>
+    <button onclick="nextPage(3)">Siguiente</button>
+  </div>
+
+  <div id="pagina3" class="pagina">
+    <h2>Condiciones Pre-Existentes</h2>
+    <input id="enfermedad" placeholder="Enfermedad">
+    <input id="tiempo" placeholder="Tiempo con la enfermedad (anos)" type="number">
+    <button onclick="addCondicion()">Agregar Condición</button>
+    <ul id="ListaCondiciones"></ul>
+    <button onclick="nextPage(4)">Siguiente</button>
+  </div>
+
+  <div id="pagina4" class="pagina">
+    <h2>Internamientos Realizados</h2>
+    <input id="fecha" type="date">
+    <input id="centroMedico" placeholder="Centro Medico">
+    <input id="diagnostico" placeholder="Diagnostico">
+    <button onclick="addInternamiento()">Agregar Internamiento</button>
+    <ul id="ListaInternamientos"></ul>
+    <button onclick="nextPage(5)">Ver Registro Completo</button>
+  </div>
+
+  <div id="pagina5" class="pagina">
+    <h2>Datos Registrados</h2>
+    <pre id="resultado"></pre>
+    <button onclick="restartForm()">Comenzar Nuevo Registro</button>
+  </div>
+
+  <script src="registro.js"></script>
+
+</body>
+</html>
