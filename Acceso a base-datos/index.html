@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Vehículo</title>
+    <link rel="stylesheet" href="stylos.css">
+</head>
+
+    <header>
+        <h1>Rent-A-Car Pinales</h1>
+        <nav class="menu" id="menu">
+            <ul>
+                 <li><a href="index.html">Agregar Vehículos</a></li>
+                 <li><a href="buscar_eliminar.html">Lista de vehiculo</a></li>
+                <li><a href="Buscar_Vehiculo.html">Actualizar vehiculo</a></li>
+                <li><a href="https://fabulous-genie-78979d.netlify.app/">li</a></li>
+           
+            </ul>
+        </nav>
+    </header>
+<body>
+    <section class="formulario"> 
+        <h2>Formulario de Registro de Vehículo</h2>
+        
+        <form method="POST" action="agregar_vehiculo.php" id="contenedor">
+            <label>Marca: <input type="text" name="marca" required></label><br>
+            <label>Modelo: <input type="text" name="modelo" required></label><br>
+            <label>Año: <input type="number" name="ano" required></label><br> 
+            <label>Color: <input type="text" name="color" required></label><br>
+            <label>Tipo de Vehículo:
+                <select name="tipo_vehiculo" required>
+                    <option value="">Seleccione</option>
+                    <option>SUV</option>
+                    <option>Sedan</option>
+                    <option>Pickup</option>
+                </select>
+            </label><br>
+            <label>Placa: <input type="text" name="placa" required></label><br>
+            <label>Número de puertas: <input type="number" name="num_puertas" required></label><br>
+            <label>Transmisión:
+                <select name="transmision" required>
+                    <option value="Manual">Manual</option>
+                    <option value="Automática">Automática</option>
+                </select>
+            </label><br>
+            <label>Combustible:
+                <select name="combustible" required>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Eléctrico">Eléctrico</option>
+                    <option value="Híbrido">Híbrido</option>
+                </select>
+            </label><br>
+            <label>Precio Diario: <input type="number" name="precio_diario" step="0.01" required></label><br>
+            <label>Estado:
+                <select name="estado" required>
+                    <option>Activo</option>
+                    <option>En Mantenimiento</option>
+                    <option>Dado de Baja</option>
+                </select>
+            </label><br>
+            <input type="submit" value="Agregar Vehículo">
+        </form>
+      
+    </section>
+     <footer>
+    <p>© 2025 Rent-A-Car Pinales | Contacto: WhatsApp +1 829-317-5844</p>
+  </footer>
+</body>
+</html>

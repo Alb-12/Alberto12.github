@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="stylos.css">
+    <title>Lista de Vehículos</title>
+    <script>
+    function cargarVehiculos() {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "buscar_vehiculos.php", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    document.getElementById("tabla-vehiculos").innerHTML = xhr.responseText;
+                } else {
+                    document.getElementById("tabla-vehiculos").innerHTML = "<p style='color:red;'>Error al cargar vehículos.</p>";
+                }
+            }
+        };
+        xhr.send();
+    }
+
+    function eliminarVehiculo(id) {
+        if (!confirm("¿Estás seguro de que deseas eliminar este vehículo?")) return;
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "eliminar_vehiculo.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    const respuesta = xhr.responseText.trim().toLowerCase();
+                    if (respuesta === "ok") {
+                        const fila = document.getElementById("fila-" + id);
+                        if (fila) {
+                            fila.remove();
+                        }
+                    } else {
+                        alert("Error al eliminar el vehículo. Mensaje del servidor: " + xhr.responseText);
+                    }
+                } else {
+                    alert("Error de red o del servidor al intentar eliminar.");
+                }
+            }
+        };
+        xhr.send("id=" + encodeURIComponent(id));
+    }
+
+ 
+    window.onload = cargarVehiculos;
+</script>
+</head>
+<header>
+    <h1>Rent-A-Car Pinales</h1>
+    <nav class="menu">
+      <ul>
+       
+        <li><a href="index.html">Agregar Vehículos</a></li>
+        <li><a href="buscar_eliminar.html">Lista de vehiculo</a></li>
+      <li><a href="Buscar_Vehiculo.html">Actualizar vehiculo</a></li>
+      </ul>
+    </nav>
+</header>
+<body>
+
+    <h2>Vehículos Registrados</h2>
+    <div id="tabla-vehiculos"></div>
+
+     <footer>
+    <p>© 2025 Rent-A-Car Pinales | Contacto: WhatsApp +1 829-317-5844</p>
+  </footer>
+</body>
+</html>
