@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de validacion de estatus</title>
+     <link rel="stylesheet" href="cedula.css">
+</head>
+<body>
+    
+    <div class="box">
+       <h1>Verificación de datos</h1>
+<form action="#" class="container">
+  <input type="text" placeholder="Nombre de usuario" required>
+  <input type="text" placeholder="Apellido">
+
+  <h3>Estatus migratorio</h3>
+  <ul>
+    <li><label><input type="radio" name="estatus" value="1"> Dominicano cedulado</label></li>
+    <li><label><input type="radio" name="estatus" value="2"> Extranjero cedulado</label></li>
+    <li><label><input type="radio" name="estatus" value="3"> Extranjero no cedulado</label></li>
+  </ul>
+
+  <input type="number" placeholder="Cédula de identidad" required id="cedula">
+  <p id="resultado" style="font-size: 0.9rem; margin-top: 5px;"></p>
+
+  <h3>Seleccione un método para recibir el código de verificación</h3>
+  <ul>
+    <li><label><input type="radio" name="contacto" value="1"> Correo electrónico</label></li>
+    <li><label><input type="radio" name="contacto" value="2"> Teléfono celular</label></li>
+  </ul>
+
+  <input type="email" required placeholder="Ingrese su correo electrónico">
+  <button type="button" id="btn">Validar</button>
+</form>
+
+
+        </div>
+             
+        
+        <script src="cedula.js"></script>
+</body>
+</html>
